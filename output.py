@@ -268,7 +268,7 @@ def mutate(dataframe):
     else:
         st.write("To view new histograms, please select target and/or alter the data. Otherwise simply refer to histograms from eariler")
 
-    st.write("Download adjusted data and target")
+    st.write("Download adjusted data and target (note that the downloaded files add an index column which you can drop in your own code)")
     X_link, y_link = get_table_download_link(dataframe, y)
     st.markdown(X_link, unsafe_allow_html=True)
     st.markdown(y_link, unsafe_allow_html=True)
